@@ -4,11 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaintJS</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <title>PaintJS</title>
 </head>
 
 <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+        <div class="controls__range">
+            <input 
+                type="range" 
+                id="jsRange" 
+                min="0.1" 
+                max="10.0" 
+                value="2.5" 
+                step="0.1" 
+            />
+        </div>
+        <div class="controls_btns">
+            <button id="jsMode">Fill</button>
+            <button id="jsSave">Save</button>
+        </div>
+        
+        <div class="controls__colors" id="jsColors">
+            <div class="controls__color jsColor" style="background-color: white"></div>
+            <div class="controls__color jsColor" style="background-color: #fa0303"></div>
+            <div class="controls__color jsColor" style="background-color: #f87a04"></div>
+            <div class="controls__color jsColor" style="background-color: #f8e006"></div>
+            <div class="controls__color jsColor" style="background-color: #0cf803"></div>
+            <div class="controls__color jsColor" style="background-color: #06edf5"></div>
+            <div class="controls__color jsColor" style="background-color: #070bf8"></div>
+            <div class="controls__color jsColor" style="background-color: #e308f7"></div>
+            <div class="controls__color jsColor" style="background-color: black"></div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 
